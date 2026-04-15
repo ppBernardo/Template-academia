@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academia de alta performance — Treinos personalizados, estrutura moderna e resultados reais.">
+  <title>Academia — Transforme seu corpo. Evolua sua rotina.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader__bar"></div>
+    <span class="loader__text">CARREGANDO</span>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#" class="navbar__logo">
+        <span class="navbar__logo-icon">⬡</span>
+        <span>ACADEMIA</span>
+      </a>
+      <ul class="navbar__menu" id="navMenu">
+        <li><a href="#beneficios" class="navbar__link" data-nav>Diferenciais</a></li>
+        <li><a href="#planos" class="navbar__link" data-nav>Planos</a></li>
+        <li><a href="#estrutura" class="navbar__link" data-nav>Estrutura</a></li>
+        <li><a href="#depoimentos" class="navbar__link" data-nav>Depoimentos</a></li>
+        <li><a href="#contato" class="navbar__link" data-nav>Contato</a></li>
+        <li><a href="#planos" class="navbar__link navbar__link--cta">Começar agora</a></li>
+      </ul>
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80" alt="" class="hero__bg-img" data-speed="0.5">
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__particles" id="particles"></div>
+    <div class="container hero__content">
+      <span class="hero__badge" data-hero-reveal>Matrículas abertas</span>
+      <h1 class="hero__title" data-split-reveal>
+        Transforme seu corpo.<br><span class="text-primary">Evolua sua rotina.</span>
+      </h1>
+      <p class="hero__subtitle" data-hero-reveal>Treinos personalizados, estrutura moderna e resultados reais.</p>
+      <div class="hero__actions" data-hero-reveal>
+        <a href="#contato" class="btn btn--primary btn--lg btn--magnetic">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Agendar aula experimental
+        </a>
+        <a href="#planos" class="btn btn--outline btn--lg btn--magnetic">Ver planos</a>
+      </div>
+      <div class="hero__stats" data-hero-reveal>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-counter="500">0</span><span class="text-primary">+</span>
+          <span class="hero__stat-label">Alunos ativos</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-counter="15">0</span><span class="text-primary">+</span>
+          <span class="hero__stat-label">Profissionais</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-counter="8">0</span>
+          <span class="hero__stat-label">Anos no mercado</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator">
+      <div class="hero__scroll-line"></div>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" data-marquee>
+    <div class="marquee__track">
+      <span>MUSCULAÇÃO</span><span class="marquee__dot">●</span>
+      <span>FUNCIONAL</span><span class="marquee__dot">●</span>
+      <span>SPINNING</span><span class="marquee__dot">●</span>
+      <span>YOGA</span><span class="marquee__dot">●</span>
+      <span>PILATES</span><span class="marquee__dot">●</span>
+      <span>CROSSFIT</span><span class="marquee__dot">●</span>
+      <span>BOXE</span><span class="marquee__dot">●</span>
+      <span>DANÇA</span><span class="marquee__dot">●</span>
+      <span>MUSCULAÇÃO</span><span class="marquee__dot">●</span>
+      <span>FUNCIONAL</span><span class="marquee__dot">●</span>
+      <span>SPINNING</span><span class="marquee__dot">●</span>
+      <span>YOGA</span><span class="marquee__dot">●</span>
+      <span>PILATES</span><span class="marquee__dot">●</span>
+      <span>CROSSFIT</span><span class="marquee__dot">●</span>
+      <span>BOXE</span><span class="marquee__dot">●</span>
+      <span>DANÇA</span><span class="marquee__dot">●</span>
+    </div>
+  </div>
+
+  <!-- BENEFÍCIOS -->
+  <section class="section" id="beneficios">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag" data-reveal>Por que nos escolher</span>
+        <h2 class="section__title" data-split-lines>Diferenciais que <span class="text-primary">fazem a diferença</span></h2>
+        <p class="section__subtitle" data-reveal>Cada detalhe foi pensado para oferecer a melhor experiência de treino.</p>
+      </div>
+      <div class="beneficios__grid">
+        <div class="card-beneficio" data-reveal-card>
+          <div class="card-beneficio__number">01</div>
+          <div class="card-beneficio__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="card-beneficio__title">Treinos Personalizados</h3>
+          <p class="card-beneficio__text">Planilhas desenvolvidas para seus objetivos, com acompanhamento contínuo e ajustes periódicos.</p>
+        </div>
+        <div class="card-beneficio" data-reveal-card>
+          <div class="card-beneficio__number">02</div>
+          <div class="card-beneficio__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m-7-7h6m6 0h6"/></svg>
+          </div>
+          <h3 class="card-beneficio__title">Equipamentos Modernos</h3>
+          <p class="card-beneficio__text">Aparelhos de última geração das melhores marcas, sempre em perfeito estado de manutenção.</p>
+        </div>
+        <div class="card-beneficio" data-reveal-card>
+          <div class="card-beneficio__number">03</div>
+          <div class="card-beneficio__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="card-beneficio__title">Professores Qualificados</h3>
+          <p class="card-beneficio__text">Equipe de profissionais certificados e em constante atualização para garantir sua segurança.</p>
+        </div>
+        <div class="card-beneficio" data-reveal-card>
+          <div class="card-beneficio__number">04</div>
+          <div class="card-beneficio__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3 class="card-beneficio__title">Ambiente Motivador</h3>
+          <p class="card-beneficio__text">Espaço projetado para inspirar e motivar, com som ambiente e iluminação pensados para performance.</p>
+        </div>
+        <div class="card-beneficio" data-reveal-card>
+          <div class="card-beneficio__number">05</div>
+          <div class="card-beneficio__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3 class="card-beneficio__title">Horários Flexíveis</h3>
+          <p class="card-beneficio__text">Funcionamento em horário estendido para caber na sua rotina. Treine quando for melhor para você.</p>
+        </div>
+        <div class="card-beneficio" data-reveal-card>
+          <div class="card-beneficio__number">06</div>
+          <div class="card-beneficio__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3 class="card-beneficio__title">Resultados Comprovados</h3>
+          <p class="card-beneficio__text">Centenas de alunos transformados. Acompanhamos sua evolução com avaliações físicas periódicas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANOS -->
+  <section class="section section--alt" id="planos">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag" data-reveal>Investimento</span>
+        <h2 class="section__title" data-split-lines>Escolha o plano <span class="text-primary">ideal para você</span></h2>
+        <p class="section__subtitle" data-reveal>Todos os planos incluem acesso completo à estrutura e acompanhamento profissional.</p>
+      </div>
+      <div class="planos__grid">
+        <div class="card-plano" data-reveal-card>
+          <div class="card-plano__header">
+            <span class="card-plano__name">Básico</span>
+            <div class="card-plano__price">
+              <span class="card-plano__currency">R$</span>
+              <span class="card-plano__value">89</span>
+              <span class="card-plano__period">/mês</span>
+            </div>
+          </div>
+          <ul class="card-plano__features">
+            <li class="card-plano__feature"><span class="check">✓</span> Acesso à musculação</li>
+            <li class="card-plano__feature"><span class="check">✓</span> Avaliação física mensal</li>
+            <li class="card-plano__feature"><span class="check">✓</span> Horário comercial</li>
+            <li class="card-plano__feature card-plano__feature--off"><span class="cross">✕</span> Aulas coletivas</li>
+            <li class="card-plano__feature card-plano__feature--off"><span class="cross">✕</span> Personal trainer</li>
+          </ul>
+          <a href="#contato" class="btn btn--outline btn--full btn--magnetic">Começar agora</a>
+        </div>
+        <div class="card-plano card-plano--featured" data-reveal-card>
+          <span class="card-plano__badge">Mais popular</span>
+          <div class="card-plano__header">
+            <span class="card-plano__name">Intermediário</span>
+            <div class="card-plano__price">
+              <span class="card-plano__currency">R$</span>
+              <span class="card-plano__value">139</span>
+              <span class="card-plano__period">/mês</span>
+            </div>
+          </div>
+          <ul class="card-plano__features">
+            <li class="card-plano__feature"><span class="check">✓</span> Acesso à musculação</li>
+            <li class="card-plano__feature"><span class="check">✓</span> Avaliação física quinzenal</li>
+            <li class="card-plano__feature"><span class="check">✓</span> Horário estendido</li>
+            <li class="card-plano__feature"><span class="check">✓</span> Aulas coletivas ilimitadas</li>
+            <li class="card-plano__feature card-plano__feature--off"><span class="cross">✕</span> Personal trainer</li>
+          </ul>
+          <a href="#contato" class="btn btn--primary btn--full btn--magnetic">Começar agora</a>
+        </div>
+        <div class="card-plano" data-reveal-card>
+          <div class="card-plano__header">
+            <span class="card-plano__name">Premium</span>
+            <div class="card-plano__price">
+              <span class="card-plano__currency">R$</span>
+              <span class="card-plano__value">219</span>
+              <span class="card-plano__period">/mês</span>
+            </div>
+          </div>
+          <ul class="card-plano__features">
+            <li class="card-plano__feature"><span class="check">✓</span> Acesso 24h</li>
+            <li class="card-plano__feature"><span class="check">✓</span> Avaliação física semanal</li>
+            <li class="card-plano__feature"><span class="check">✓</span> Horário livre</li>
+            <li class="card-plano__feature"><span class="check">✓</span> Aulas coletivas ilimitadas</li>
+            <li class="card-plano__feature"><span class="check">✓</span> Personal trainer incluso</li>
+          </ul>
+          <a href="#contato" class="btn btn--outline btn--full btn--magnetic">Começar agora</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HORIZONTAL GALLERY -->
+  <section class="section" id="estrutura">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag" data-reveal>Conheça o espaço</span>
+        <h2 class="section__title" data-split-lines>Estrutura de <span class="text-primary">alto padrão</span></h2>
+        <p class="section__subtitle" data-reveal>Ambientes projetados para oferecer conforto e performance em cada treino.</p>
+      </div>
+    </div>
+    <div class="gallery-scroll" data-gallery-scroll>
+      <div class="gallery-scroll__track">
+        <div class="gallery-scroll__item">
+          <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&q=80" alt="Musculação" loading="lazy">
+          <div class="gallery-scroll__caption">Musculação</div>
+        </div>
+        <div class="gallery-scroll__item">
+          <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&q=80" alt="Funcional" loading="lazy">
+          <div class="gallery-scroll__caption">Funcional</div>
+        </div>
+        <div class="gallery-scroll__item">
+          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&q=80" alt="Spinning" loading="lazy">
+          <div class="gallery-scroll__caption">Spinning</div>
+        </div>
+        <div class="gallery-scroll__item">
+          <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=800&q=80" alt="Cardio" loading="lazy">
+          <div class="gallery-scroll__caption">Cardio</div>
+        </div>
+        <div class="gallery-scroll__item">
+          <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=800&q=80" alt="Recepção" loading="lazy">
+          <div class="gallery-scroll__caption">Recepção</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="section section--alt" id="depoimentos">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag" data-reveal>Resultados reais</span>
+        <h2 class="section__title" data-split-lines>O que nossos <span class="text-primary">alunos dizem</span></h2>
+        <p class="section__subtitle" data-reveal>Histórias de transformação que inspiram e motivam.</p>
+      </div>
+      <div class="depoimentos__grid">
+        <div class="card-depoimento" data-reveal-card>
+          <div class="card-depoimento__stars">★★★★★</div>
+          <p class="card-depoimento__text">"Em 6 meses perdi 15kg e ganhei disposição que não tinha há anos. A equipe é incrível e o ambiente é super motivador."</p>
+          <div class="card-depoimento__author">
+            <div class="card-depoimento__avatar">MA</div>
+            <div>
+              <span class="card-depoimento__name">Marcos Almeida</span>
+              <span class="card-depoimento__result">Perdeu 15kg em 6 meses</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-depoimento" data-reveal-card>
+          <div class="card-depoimento__stars">★★★★★</div>
+          <p class="card-depoimento__text">"Melhor academia que já frequentei. Os profissionais são muito atenciosos e os equipamentos são de primeira qualidade."</p>
+          <div class="card-depoimento__author">
+            <div class="card-depoimento__avatar">CS</div>
+            <div>
+              <span class="card-depoimento__name">Camila Santos</span>
+              <span class="card-depoimento__result">Ganhou 5kg de massa magra</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-depoimento" data-reveal-card>
+          <div class="card-depoimento__stars">★★★★★</div>
+          <p class="card-depoimento__text">"Comecei sem saber nada e hoje treino com confiança. O personal é excelente e os resultados apareceram rápido."</p>
+          <div class="card-depoimento__author">
+            <div class="card-depoimento__avatar">RL</div>
+            <div>
+              <span class="card-depoimento__name">Rafael Lima</span>
+              <span class="card-depoimento__result">Definição corporal em 4 meses</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-depoimento" data-reveal-card>
+          <div class="card-depoimento__stars">★★★★★</div>
+          <p class="card-depoimento__text">"Os horários flexíveis são perfeitos para quem trabalha o dia todo. Nunca mais deixei de treinar por falta de tempo."</p>
+          <div class="card-depoimento__author">
+            <div class="card-depoimento__avatar">FO</div>
+            <div>
+              <span class="card-depoimento__name">Fernanda Oliveira</span>
+              <span class="card-depoimento__result">Treina há 2 anos sem parar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIG TEXT CTA -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-block" data-parallax-block>
+        <h2 class="cta-block__title" data-split-lines>
+          Seu resultado começa<br>com o <span class="text-primary">primeiro passo.</span>
+        </h2>
+        <p class="cta-block__text" data-reveal>Não espere a segunda-feira perfeita. Comece agora e descubra do que você é capaz.</p>
+        <a href="#contato" class="btn btn--primary btn--lg btn--glow btn--magnetic" data-reveal>
+          Quero começar hoje
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section" id="contato">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag" data-reveal>Fale conosco</span>
+        <h2 class="section__title" data-split-lines>Venha <span class="text-primary">nos visitar</span></h2>
+        <p class="section__subtitle" data-reveal>Estamos prontos para te receber e ajudar a começar sua transformação.</p>
+      </div>
+      <div class="contato__grid">
+        <div class="contato__info">
+          <div class="contato__card" data-reveal-card>
+            <div class="contato__card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h4 class="contato__card-title">Endereço</h4>
+              <p class="contato__card-text">Rua Example, 123 — Centro<br>São Paulo — SP, 01234-567</p>
+            </div>
+          </div>
+          <div class="contato__card" data-reveal-card>
+            <div class="contato__card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <h4 class="contato__card-title">Horário</h4>
+              <p class="contato__card-text">Seg a Sex: 6h — 23h<br>Sáb: 8h — 18h | Dom: 8h — 14h</p>
+            </div>
+          </div>
+          <div class="contato__card" data-reveal-card>
+            <div class="contato__card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <h4 class="contato__card-title">WhatsApp</h4>
+              <p class="contato__card-text">(11) 99999-9999</p>
+            </div>
+          </div>
+          <a href="#" class="btn btn--whatsapp btn--full btn--magnetic" data-whatsapp-btn>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Chamar no WhatsApp
+          </a>
+        </div>
+        <div class="contato__mapa" data-reveal>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1976816700994!2d-46.65342622380427!3d-23.56107566168783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="navbar__logo">
+            <span class="navbar__logo-icon">⬡</span>
+            <span>ACADEMIA</span>
+          </a>
+          <p class="footer__desc">Transformando vidas através do movimento, com estrutura de alto padrão e profissionais dedicados.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="TikTok">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <h4 class="footer__links-title">Links rápidos</h4>
+          <a href="#beneficios" class="footer__link">Diferenciais</a>
+          <a href="#planos" class="footer__link">Planos</a>
+          <a href="#estrutura" class="footer__link">Estrutura</a>
+          <a href="#depoimentos" class="footer__link">Depoimentos</a>
+          <a href="#contato" class="footer__link">Contato</a>
+        </div>
+        <div class="footer__links">
+          <h4 class="footer__links-title">Modalidades</h4>
+          <a href="#" class="footer__link">Musculação</a>
+          <a href="#" class="footer__link">Funcional</a>
+          <a href="#" class="footer__link">Spinning</a>
+          <a href="#" class="footer__link">Yoga</a>
+          <a href="#" class="footer__link">Pilates</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Academia. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp FAB -->
+  <a href="#" class="whatsapp-fab" data-whatsapp-btn target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

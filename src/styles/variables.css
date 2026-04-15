@@ -1,0 +1,43 @@
+/* ============================================================
+   THEME CONFIG — Change these to rebrand instantly
+   ============================================================ */
+:root {
+  --primary: #ff6b00;
+  --primary-light: #ff8a33;
+  --primary-dark: #e05e00;
+  --primary-rgb: 255, 107, 0;
+
+  --secondary: #00c2ff;
+  --secondary-rgb: 0, 194, 255;
+
+  --bg-body: #060606;
+  --bg-card: #111111;
+  --bg-card-hover: #181818;
+  --bg-elevated: #1a1a1a;
+  --bg-navbar: rgba(6, 6, 6, 0.6);
+
+  --text-100: #ffffff;
+  --text-200: #e0e0e0;
+  --text-300: #a0a0a0;
+  --text-400: #666666;
+  --text-500: #333333;
+
+  --border: #1e1e1e;
+  --border-hover: #2e2e2e;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Space Grotesk', 'Inter', sans-serif;
+
+  --navbar-h: 72px;
+  --container: 1200px;
+  --gutter: 20px;
+}
