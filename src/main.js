@@ -11,7 +11,7 @@ import { initScrollReveals } from './animations/scroll-reveals.js';
 import { initMarquee } from './animations/marquee.js';
 import { initGalleryScroll } from './animations/gallery.js';
 import { initCounters } from './animations/counters.js';
-import { initMagneticButtons } from './animations/magnetic.js';
+import { initButtonEffects } from './animations/magnetic.js';
 import { initCtaAnimations } from './animations/cta.js';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -124,7 +124,7 @@ async function init() {
   initMarquee();
   initGalleryScroll();
   initCounters();
-  initMagneticButtons();
+  initButtonEffects();
   initCtaAnimations();
 
   ScrollTrigger.refresh();

@@ -59,6 +59,21 @@
   box-shadow: 0 0 30px rgba(var(--primary-rgb), 0.3);
 }
 
+.btn--shine {
+  overflow: hidden;
+}
+
+.btn__shine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+  pointer-events: none;
+  transform: translateX(-100%);
+}
+
 /* ============================================================
    NAVBAR
    ============================================================ */
@@ -471,21 +486,25 @@
    PLANOS
    ============================================================ */
 .planos__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   gap: 24px;
-  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .card-plano {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-xl);
-  padding: 40px 32px;
+  padding: 40px 28px;
   display: flex;
   flex-direction: column;
   position: relative;
-  transition: border-color 0.4s, transform 0.4s var(--ease-out-expo), box-shadow 0.4s;
+  flex: 1;
+  min-width: 0;
+  transition: border-color 0.4s, box-shadow 0.4s;
 }
 
 .card-plano:hover {
@@ -495,9 +514,9 @@
 .card-plano--featured {
   border-color: var(--primary);
   background: linear-gradient(180deg, rgba(var(--primary-rgb), 0.06) 0%, var(--bg-card) 50%);
-  padding: 52px 36px;
+  padding: 56px 32px 48px;
   z-index: 1;
-  box-shadow: 0 0 40px rgba(var(--primary-rgb), 0.08);
+  box-shadow: 0 0 50px rgba(var(--primary-rgb), 0.1);
 }
 
 .card-plano--featured .card-plano__value {
@@ -506,12 +525,7 @@
 
 .card-plano--featured:hover {
   border-color: var(--primary-light);
-  box-shadow: 0 0 80px rgba(var(--primary-rgb), 0.18);
-}
-
-/* Alinhamento dos cards laterais com o card em destaque */
-.planos__grid > .card-plano:not(.card-plano--featured) {
-  margin-top: 22px;
+  box-shadow: 0 0 80px rgba(var(--primary-rgb), 0.2);
 }
 
 .card-plano__badge {
@@ -532,8 +546,8 @@
 
 .card-plano__header {
   text-align: center;
-  margin-bottom: 32px;
-  padding-bottom: 32px;
+  margin-bottom: 28px;
+  padding-bottom: 28px;
   border-bottom: 1px solid var(--border);
 }
 
@@ -555,7 +569,7 @@
 }
 
 .card-plano__currency { font-size: 1.2rem; font-weight: 700; color: var(--text-300); }
-.card-plano__value { font-family: var(--font-display); font-size: 4rem; font-weight: 700; line-height: 1; }
+.card-plano__value { font-family: var(--font-display); font-size: 3.5rem; font-weight: 700; line-height: 1; }
 .card-plano__period { font-size: 0.85rem; color: var(--text-400); }
 
 .card-plano__features {
