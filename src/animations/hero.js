@@ -58,12 +58,6 @@ export function initHeroAnimations() {
     ease: 'power3.out',
   }, '-=0.3');
 
-  // Scroll indicator
-  tl.to('.hero__scroll-indicator', {
-    opacity: 1,
-    duration: 0.6,
-  }, '-=0.2');
-
   // Parallax on hero image
   const bgImg = hero.querySelector('.hero__bg-img');
   if (bgImg) {
